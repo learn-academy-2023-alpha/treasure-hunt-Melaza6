@@ -35,7 +35,19 @@ const handleGamePlay = (index) =>{
   setBoard(updatedBoard)
   }
 }
-
+const restart = () =>{
+  setBoard([
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?"
+  ])
+}
   return (
     <>
       <h1>Treasure Hunt Game</h1>
@@ -50,6 +62,7 @@ const handleGamePlay = (index) =>{
             )
           })}
       </div>
+      <button onClick={restart}>Play Again!!</button>
 
 
     </>
