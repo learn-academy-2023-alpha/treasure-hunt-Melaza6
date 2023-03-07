@@ -18,6 +18,7 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
     - Show props inside of div in Square
     - Center and resize question mark
 
+
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
     Branch alert-index
     - Setup an onclickon the Square component div
@@ -32,13 +33,19 @@ Branch: tree-emoji
 - Index allows us to use bracket notation to update the element that was clicked to a tree emoji
 - Update state using setBoard metho with the modified copied array
 
+
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 Branch: winner-loser
-- Randomize winning box index and store
-
-
+- Randomize winning box index and store in a state variable
+- Randomize losing box index and store in a state variable
+- Create son conditional logic to check if selected box is the winning box or losing box when clicking the box
 
 - As a user, I can click on a “Play Again” button that will restart the game.
+Branch: play-again
+- create a varible that will restart the board
+- create a onclick that will take the state of restart and restart the game.
+
+
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
 - As a user, I can see a message informing me that I lost the game if I select the square that contains the bomb.
